@@ -61,9 +61,12 @@ body{
     text-align: right;
 }
 
-@media (max-width:450px){
+@media (max-width:428px){
     body{flex-wrap: wrap;}
     .form{width: 100%;}
-    .input{height: 100px;}
-    .input::placeholder{transform: translateY(-15px);}
+    .input{
+        height: 100px;
+        font-size: 25px;
+    }
+    .input::placeholder{transform: translateY(-10px);}
 }
