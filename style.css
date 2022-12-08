@@ -32,6 +32,7 @@ body{
 .input::placeholder{
     color: lightgray;
     font-family: cursive;
+    white-space: normal;
 }
 
 .btn{
@@ -56,4 +57,11 @@ body{
 .score{
     color: green;
     text-align: right;
+}
+
+@media (max-width:450px){
+    body{flex-wrap: wrap;}
+    .form{width: 100%;}
+    .input{height: 100px;}
+    .input::placeholder{transform: translateY(-15px);}
 }
